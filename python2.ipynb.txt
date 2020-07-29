@@ -1,0 +1,150 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "python2.ipynb",
+      "provenance": [],
+      "collapsed_sections": []
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "1S3CxK_M_Id_",
+        "colab_type": "text"
+      },
+      "source": [
+        "##DAY 7 ASSIGNMENT\n",
+        "\n",
+        "1.TO CREATE A NEW DICTIONARY IN WHICH KEYS BECOME VALUES AND VALUES BECOMES KEY"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "C2-oORs5_eh2",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        },
+        "outputId": "0978baa3-4722-4fe6-d62c-6fac9958ff07"
+      },
+      "source": [
+        "dict1={21:\"ftp\",22:\"ssh\",23:\"telnet\",80:\"http\"}\n",
+        "dict2={value:key for key,value in dict1.items()}\n",
+        "print(\"The output:\",dict2)"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "The output: {'ftp': 21, 'ssh': 22, 'telnet': 23, 'http': 80}\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "KLs7qWR0Bpfq",
+        "colab_type": "text"
+      },
+      "source": [
+        "2.MAKE A NEW LIST WHICH CONTAINS THE SUM OF TUPLE"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "sJ_sLDXPB4PD",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 85
+        },
+        "outputId": "60b0f528-f863-48b8-e9a2-50c5635b4368"
+      },
+      "source": [
+        "list1=[(1,2),(3,4),(5,6),(4,5)]\n",
+        "list2=[]\n",
+        "for each in range(0,len(list1)):\n",
+        "  a,b=list1[each]\n",
+        "  list2.append(a+b)\n",
+        "  print(\"The list contains sum of tuple:\",list2)"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "The list contains sum of tuple: [3]\n",
+            "The list contains sum of tuple: [3, 7]\n",
+            "The list contains sum of tuple: [3, 7, 11]\n",
+            "The list contains sum of tuple: [3, 7, 11, 9]\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "LnNGLm9BC0dc",
+        "colab_type": "text"
+      },
+      "source": [
+        "3.TO MAKE THE ELEMENT IN THE INNER LIST AND TUPLE TO THE OUTER LIST"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "z0NxfnYxDCsf",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        },
+        "outputId": "381b153c-79d5-4217-95e5-1ad6a428bb24"
+      },
+      "source": [
+        "list1=[(1,2,3),[1,2],['a','hit','less']]\n",
+        "list2=[]\n",
+        "list2=[i for each in list1 for i in each]\n",
+        "print(\"The required output:\",list2)"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "The required output: [1, 2, 3, 1, 2, 'a', 'hit', 'less']\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "8SnGt_qxDp5v",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        ""
+      ],
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
